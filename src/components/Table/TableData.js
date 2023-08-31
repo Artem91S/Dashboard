@@ -1,0 +1,25 @@
+export const tableTitles = [
+    { id: "1", text: "Card model" },
+    { id: "2", text: "Card name" },
+    { id: "3", text: "Type" },
+    { id: "4", text: "Limited" },
+    { id: "5", text: "№ Operations" },
+    { id: "6", text: "Date of lost operations" },
+    { id: "7", text: "Rating" },
+    { id: "8", text: "Status" },
+    { id: "9", text: "Price" },
+    { id: "10", text: "Options" },
+  ];
+ export const tableList = [
+    {id: "1", text: "Source"},
+    { id: "2", text: "Card model" },
+    { id: "3", text: "Card name" },
+    { id: "4", text: "Type" },
+    { id: "5", text: "Limited" },
+    { id: "6", text: "№ Operations" },
+    { id: "7", text: "Date of lost operations" },
+    { id: "8", text: "Rating" },
+    { id: "9", text: "Status" },
+    { id: "10", text: "Price" },
+    { id: "11", text: "Options" },
+  ];
