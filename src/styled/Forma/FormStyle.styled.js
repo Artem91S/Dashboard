@@ -4,18 +4,21 @@ export const FormStyle = styled.form`
   width: 500px;
   display: flex;
   flex-flow: column;
+  align-items: center;
   gap: 16px;
 `;
 
 export const ContainerForma = styled.div`
   box-size: border-box;
-  width: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content:center;
   flex-flow: column;
   gap: 48px;
-  padding-top: 160px;
+  height:100vh;
   margin: 0 auto;
+  background:#242731;
 `;
 
 export const HeaderFlex = styled.div`
