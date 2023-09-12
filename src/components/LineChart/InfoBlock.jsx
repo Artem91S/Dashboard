@@ -6,11 +6,12 @@ import {
   FlexBlock,
   SquareFlex,
   Container,
+  ContainerBlock
 } from "../../styled/LineChart/InfoBlock.styled";
 
 export function InfoBlock({ fetchData }) {
   return (
-    <>
+    <ContainerBlock>
       <Container>
         <SquareFlex>
           {colors.map((colors) => (
@@ -30,6 +31,6 @@ export function InfoBlock({ fetchData }) {
           title={user.name} date={user.date} />
         ))}
       </FlexBlock>
-    </>
+    </ContainerBlock>
   );
 }

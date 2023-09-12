@@ -1,7 +1,7 @@
 export const data = [
     { value: 700, fill: "#ED2D95" ,title: 'Excessive',proc:'85%',text:' +40 418 in the last',description:' 30 days'},
-    { value: 200, fill: "#18A0FB" },
-    { value: 500, fill: "#3CDC86" },
+    { value: 220, fill: "#18A0FB" },
+    { value: 400, fill: "#3CDC86" },
   ];
 
   export const listData = [

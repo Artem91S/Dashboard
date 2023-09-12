@@ -1,4 +1,4 @@
-import { MainStyled,BoxStyled,MoreStyled,GameStyled,SettingsStyled} from "../../styled/SideBar/SideBar.styled";
+import { MainStyled,BoxStyled,MoreStyled,GameStyled,SettingsStyled,FavoriteStyled} from "../../styled/SideBar/SideBar.styled";
 
 export const menuIcons = [
   {
@@ -15,10 +15,14 @@ export const menuIcons = [
   },
   {
     id: 4,
-    icon: <GameStyled/>,
+    icon: <FavoriteStyled/>,
   },
   {
     id: 5,
+    icon: <GameStyled/>,
+  },
+  {
+    id: 6,
     icon: <SettingsStyled />,
   },
 ];

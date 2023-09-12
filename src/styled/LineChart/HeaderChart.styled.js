@@ -9,33 +9,37 @@ export const Container = styled.div`
 `;
 export const HeaderTitle = styled.p`
 color:#FFF;
-font-size:18px; 
-line-height:24px;
+font-size:18.2px; 
+line-height:23px;
 font-weight:500;
+letter-spacing:0.5px;
 margin:0;
 `;
 
 export const HeaderTypes = styled.div`
   display:flex;
   gap: 16px;
-  align-items:center;
+
 `;
 export const TypeTitle = styled.p`
 color:rgba(255, 255, 255, 0.60);
 font-size:12px; 
-line-height:16px;
+line-height:19px;
+letter-spacing:0.6px;
+opacity:0.6;
 margin:0;
 `;
 
 export const TypesDropDown = styled.div`
   display:flex;
-  align-items:center;
   cursor:pointer;
+  gap:6px;
 `;
 
 export const DropDownText = styled.p`
 color:${props=>props.color};
 font-size:13px; 
-line-height:15px;
+line-height:20px;
+letter-spacing:0.1px;
 margin:0;
 `;

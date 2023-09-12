@@ -3,6 +3,7 @@ import styled from "styled-components";
  
 export const Container = styled.div`
   width: 1312px;
+  max-height:344px;
   background: #242731;
   border-radius: 4px;
   box-size: border-box;

@@ -4,6 +4,7 @@ import { Box } from '../../icons/Box';
 import { More } from '../../icons/More';
 import { Game } from "../../icons/Game";
 import { Settings } from "../../icons/Settings";
+import { Favorite } from "../../icons/Favorite";
 
 export const SideBarContainer=styled.div`
       background:#242731;
@@ -21,7 +22,7 @@ export const SideBarContainer=styled.div`
 export const IconsFlex=styled.div`
       display:flex;
       flex-flow:column;
-      gap:20px;
+      gap:17px;
 `
 
 export const MainStyled =styled(Main)`
@@ -39,7 +40,9 @@ stroke:#7D869E;
 export const SettingsStyled =styled(Settings)`
 stroke:#7D869E;
 `;
-
+export const FavoriteStyled =styled(Favorite)`
+stroke:#7D869E;
+`;
 export const IconContainer = styled.div`
   padding: 12px;
   background: #191c23;
@@ -62,5 +65,8 @@ export const IconContainer = styled.div`
     ${SettingsStyled} {
       stroke:#FFF;
     } 
+    ${FavoriteStyled} {
+      stroke:#FFF;
+    }
   }  
 `;

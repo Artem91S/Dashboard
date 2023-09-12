@@ -15,17 +15,17 @@ function renderActiveShape ({
   
   return (
     <>
-      <text x={cx} y={cy} dy={-45} fontSize={12} 
+      <text x={115} y={114} dy={-56.5} fontSize={12} 
       style={{textTransform:'uppercase'}} textAnchor="middle" fill='#FFF'>
         {payload.title}
       </text>
-      <text x={cx} y={cy} dy={10} fontSize={64} textAnchor="middle" fill='#FFF'>
+      <text x={cx} y={cy} dy={7} fontSize={64} textAnchor="middle" fill='#FFF'>
         {payload.proc}
       </text>
-      <text x={cx} y={cy} dy={30} fontSize={12} textAnchor="middle" fill='#FFF'>
+      <text x={113} y={cy} dy={35} fontSize={12} textAnchor="middle" fill='#FFF'>
       {payload.text}
       </text>
-      <text x={cx} y={cy} dy={50}
+      <text x={113} y={116} dy={49.5}
       fontSize={12}
       textAnchor="middle" fill='#FFF'>
       {payload.description}
@@ -68,7 +68,7 @@ export  function Chart() {
             data={data}
             cx={110}
             cy={110}
-            startAngle={-100}
+            startAngle={-105}
             endAngle={500}
             cornerRadius={30}
             innerRadius={95}

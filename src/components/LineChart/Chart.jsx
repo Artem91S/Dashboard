@@ -12,12 +12,12 @@ export function Chart({fetchData}) {
       }
     return (
     <AreaChart
-      width={903} height={248} 
+      width={930} height={268} 
       data={fetchData?.chartData}
       margin={{
         top: 0,
         right: 24,
-        left: 25,
+        left: 20,
         bottom: 20,
       }}
     >
@@ -64,7 +64,7 @@ export function Chart({fetchData}) {
         </linearGradient>
       </defs>
       <XAxis
-        dy={17}
+        dy={11}
         tick={{
           display:'flex',
           gap:'40px',
@@ -75,8 +75,11 @@ export function Chart({fetchData}) {
         dataKey={dataChange}
       />
       <YAxis
-        dx={-21}
+        dx={-20}
+        // dy={15}
         tick={{
+          display:'flex',
+          gap:'20px',
           fill: "rgba(255, 255, 255, 0.60)",
           fontSize: "11px",
           lineHeight: "12px",
