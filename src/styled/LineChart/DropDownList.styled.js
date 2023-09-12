@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 export const DotBorder = styled.a`
   border: ${(props) => props.$border};
-  width: 24px;
+  width: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 24px;
+  height: 20px;
   border-radius: 50%;
   margin: 0;
 `;
 
 export const ListItem = styled.li`
-  padding: 8px 16px 8px 24px;
+  padding: 8px 16px 8px 28px;
   display: flex;
   list-style-type: none;
   align-items: center;
   gap: 16px;
   font-size: 14px;
-  line-height: 20px;
+  letter-spacing:1px;
+  line-height: 24px;
   &:hover {
     border-radius: ${(props) => props.borderHover};
     background: ${(props) => props.backgroundHover};
@@ -28,6 +29,7 @@ export const ListItem = styled.li`
 export const ListContainer = styled.ul`
   border-radius: 8px;
   box-sizing: border-box;
+  height:${(props) => props.height};
   padding: ${(props) => props.$padding};
   background: #242731;
   width: ${(props) => props.width};
@@ -45,8 +47,8 @@ export const ListContainer = styled.ul`
 `;
 
 export const DotCenter = styled.span`
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   cursor: pointer;
   background: ${(props) => props.$background};

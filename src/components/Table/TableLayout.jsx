@@ -1,4 +1,4 @@
-import { Table, Tbody, Th, Thead, Tr } from "../../styled/Table/Table.styled";
+import { Table, Tbody, Th, Thead, Tr,HoverRow } from "../../styled/Table/Table.styled";
 import { TableRow } from "./TableRow";
 import { tableTitles } from "./TableData";
 
@@ -10,9 +10,7 @@ export function TableLayout() {
           {tableTitles.map((title) => (
             <Th
               key={title.id}
-              $justify={
-                title.id === "1" || title.id === "2" ? "flex-start" : "center"
-              }
+              $justify={title.justify}
             >
               {title.text}
             </Th>
@@ -20,7 +18,7 @@ export function TableLayout() {
         </Tr>
       </Thead>
       <Tbody>
-        <TableRow />
+        <HoverRow />
         <TableRow />
         <TableRow />
         <TableRow />

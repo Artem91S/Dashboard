@@ -9,10 +9,10 @@ import {
 export function DropDownList({ showList, item, setItem }) {
   return (
     <ListContainer
-    width="292px"
+    width="300px"
     $right="36px"
     $top="48px"
-    $padding="8px"
+    $padding="4px"
     display={showList ? "flex" : "none"}>
       {listItems.map((items) => (
         <ListItem

@@ -10,6 +10,10 @@ import {
   NameContent,
   TdContentCenter,
   TdContentEnd,
+  TableImgContainer,
+  TdContentStart,
+  TdContentStartPrice,
+  TdContentStartData,
 } from "../../styled/Table/Table.styled";
 import { Options } from "../../icons/Options";
 import card from "../../img/card.png";
@@ -22,7 +26,9 @@ export function TableRow() {
       {fetchDate?.general_sales_time?.map((value, index) => (
         <Tr key={Math.random()}>
           <ModelContainer>
+          <TableImgContainer>
             <TableImg src={card} alt="card image" />
+            </TableImgContainer>
             <ModelContent>{value.model.name}</ModelContent>
           </ModelContainer>
           <NameContainer>
@@ -32,10 +38,10 @@ export function TableRow() {
           <TdContentEnd>{value.type}</TdContentEnd>
           <TdContentCenter>{value.limited}</TdContentCenter>
           <TdContentCenter>{value.operations}</TdContentCenter>
-          <TdContentCenter>{ConvertDate(value.date)}</TdContentCenter>
-          <TdContentCenter>{value.rating}</TdContentCenter>
+          <TdContentStartData>{ConvertDate(value.date)}</TdContentStartData>
+          <TdContentStart>{value.rating}</TdContentStart>
           <TdContentEnd>{value.status}</TdContentEnd>
-          <TdContentCenter>{value.price}</TdContentCenter>
+          <TdContentStartPrice>{value.price}</TdContentStartPrice>
           <TdContentCenter cursor="pointer">
             <Options />
           </TdContentCenter>

@@ -4,8 +4,8 @@ export const ListContainer =styled.ul`
 display:flex;
 flex-flow:column;
 gap:16px;
-padding-top:24px;
-padding-left:38px;
+padding-top:7px;
+padding-left:16px;
 margin:0;
 `;
 

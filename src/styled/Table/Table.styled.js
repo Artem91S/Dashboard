@@ -1,9 +1,9 @@
 import styled from "styled-components";
-
+import { TableRow } from "../../components/Table/TableRow";
 export const Wrapper = styled.div`
   cursor: pointer;
   display: flex;
-  gap:8px;
+  gap: 8px;
 `;
 
 export const Container = styled.div`
@@ -22,24 +22,26 @@ export const FlexBox = styled.div`
 export const TitleBox = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 `;
 export const Title = styled.p`
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  letter-spacing: 0.5px;
   margin: 0;
 `;
 export const SettingsFlex = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 `;
 export const ListTitle = styled.p`
-  color: ${props=>props.color};
+  color: ${(props) => props.color};
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.7px;
   margin: 0;
   cursor: pointer;
 `;
@@ -48,7 +50,7 @@ export const Table = styled.table`
   display: grid;
   grid-template-columns: 220px 220px repeat(3, 80px) 160px repeat(3, 80px) 72px;
   column-gap: 60px;
-  row-gap: 16px;
+  /* row-gap: 31px; */
   padding: 32px 0 20px;
 `;
 
@@ -56,8 +58,10 @@ export const Th = styled.th`
   display: flex;
   justify-content: ${(props) => props.$justify};
   font-size: 11px;
+  padding-bottom: 8px;
   font-weight: 500px;
   line-height: 12px;
+  letter-spacing: 0.4px;
   color: rgba(255, 255, 255, 0.6);
 `;
 
@@ -72,22 +76,30 @@ export const Tbody = styled.tbody`
   display: contents;
 `;
 export const TableImg = styled.img`
-  width: 35px;
+  width: 28px;
   height: 40px;
+`;
+export const TableImgContainer = styled.div`
+  display: flex;
 `;
 
 export const ModelContainer = styled.td`
+  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.2px;
   display: flex;
   gap: 16px;
 `;
 export const ModelContent = styled.span`
-  width: 104px;
+  width: 110px;
+  display: flex;
 `;
 export const NameContainer = styled.td`
+  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.3px;
   display: flex;
   flex-flow: column;
 `;
@@ -98,27 +110,62 @@ export const CardNumber = styled.span`
   font-size: 11px;
   color: rgba(255, 255, 255, 0.6);
 `;
-
+export const TdContentStart = styled.td`
+  padding: 16px 0px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight:400;
+  display: flex;
+  justify-content:flex-start;
+  letter-spacing: 0.1px;
+  align-items: center;
+  cursor: ${(props) => props.cursor};
+`;
+export const TdContentStartData = styled.td`
+  padding: 16px 0px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight:400;
+  display: flex;
+  justify-content:flex-start;
+  letter-spacing: -0.3px;
+  align-items: center;
+`;
 export const TdContentCenter = styled.td`
+  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  cursor: ${(props) => props.cursor};
+`;
+export const TdContentStartPrice = styled.td`
+  padding: 16px 0px;
+  font-size: 15px;
+  font-weight:500;
+  line-height: 20px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
   cursor: ${(props) => props.cursor};
 `;
 export const TdContentEnd = styled.td`
+  padding: 16px 0px;
+  letter-spacing: 0.3px;
   font-size: 13px;
   line-height: 20px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  /* justify-content: flex-end; */
 `;
 
 export const DropDownContainer = styled.ul`
   margin: 0;
-  z-index:10;
+  z-index: 10;
   position: absolute;
-  top: 56px;
-  right: 42px;
+  top: 52px;
+  right: 38px;
   height: 288px;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -146,7 +193,7 @@ export const DropDownContainer = styled.ul`
 
 export const DropDownList = styled.li`
   height: 40px;
-  padding: 10px 16px 10px 24px;
+  padding: 10px 17px 10px 24px;
   display: flex;
   gap: 24px;
 `;
@@ -154,6 +201,7 @@ export const DropDownList = styled.li`
 export const DropDownContent = styled.span`
   font-size: 14px;
   line-height: 20px;
+  letter-spacing:0.6px;
   width: 194px;
 `;
 export const Switcher = styled.span`
@@ -172,8 +220,8 @@ export const Switcher = styled.span`
     transition: all 0.2s ease-in-out;
     position: absolute;
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     left: 2px;
     bottom: 2px;
     border-radius: 20px;
@@ -181,10 +229,10 @@ export const Switcher = styled.span`
   }
 `;
 export const SwitcherContainer = styled.label`
-  position:relative;
-  display:inline-block;
-  width: 24px;
-  height: 16px;
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 19px;
   border-radius: 6px;
 `;
 
@@ -199,3 +247,8 @@ export const Input = styled.input`
     transform: translateX(8px);
   }
 `;
+
+export const HoverRow =styled(TableRow)`
+
+background-color:rgba(255, 255, 255, 0.06);
+`
