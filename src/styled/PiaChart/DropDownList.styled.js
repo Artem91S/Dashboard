@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const ListItem = styled.li`
   padding: 12px 16px;
+  color:#A2A4A8;
   display: flex;
   list-style-type: none;
   justify-content:space-between;
@@ -11,7 +12,7 @@ export const ListItem = styled.li`
   font-size: 13px;
   line-height: 20px;
   &:hover {
-    border-radius: ${(props) => props.$borderHover};
+    color:#FFF;
     background: ${(props) => props.$backgroundHover};
   }
 `;

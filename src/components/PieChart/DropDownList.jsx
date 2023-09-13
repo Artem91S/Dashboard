@@ -15,7 +15,6 @@ export function DropDownList({ showList,item, setItem }) {
       {dropMenu.map((items) => (
         <ListItem
           key={items.id}
-          $borderHover="4px"
           $backgroundHover="#31343D"
           onClick={() => setItem(items.content)}
         >

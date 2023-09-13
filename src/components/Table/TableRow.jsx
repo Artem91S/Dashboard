@@ -14,7 +14,6 @@ import {
   TdContentStartData,
 } from "../../styled/Table/Table.styled";
 import { Options } from "../../icons/Options";
-import card from "../../img/card.png";
 import { ConvertDate } from "./Utile";
 
 export function TableRow({className}) {
@@ -24,7 +23,7 @@ export function TableRow({className}) {
       {fetchDate?.general_sales_time?.map((value, index) => (
        <Fragment className={className} key={Math.random()} >
           <ModelContainer>
-            <TableImg src={card} alt="card image" />
+            <TableImg src='../img/card.png' alt="Card image" />
             <ModelContent>{value.model.name}</ModelContent>
           </ModelContainer>
           <NameContainer>
