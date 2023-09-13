@@ -10,32 +10,32 @@ export const Container = styled.div`
   box-sizing: border-box;
   background: #242731;
   border-radius: 4px;
-  padding: 24px 32px 0px;
   position: relative;
 `;
 
 export const FlexBox = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 24px 32px 30px;
 `;
 
 export const TitleBox = styled.div`
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 `;
 export const Title = styled.p`
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: 0.5px;
   margin: 0;
 `;
 export const SettingsFlex = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 `;
 export const ListTitle = styled.p`
   color: ${(props) => props.color};
@@ -46,45 +46,53 @@ export const ListTitle = styled.p`
   cursor: pointer;
 `;
 export const Table = styled.table`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 220px 220px repeat(3, 80px) 160px repeat(3, 80px) 72px;
-  column-gap: 60px;
-  /* row-gap: 31px; */
-  padding: 32px 0 20px;
+padding-bottom:20px;
 `;
 
 export const Th = styled.th`
+  display: grid;
+  grid-template-columns: 220px 220px repeat(3, 80px) 160px repeat(3, 80px) 72px;
+  column-gap: 60px;
+  padding: 0px 30px 8px;
+`;
+
+export const Thead = styled.thead`
+  display: contents;
+`;
+export const TrHeader = styled.tr`
   display: flex;
   justify-content: ${(props) => props.$justify};
   font-size: 11px;
-  padding-bottom: 8px;
   font-weight: 500px;
   line-height: 12px;
   letter-spacing: 0.4px;
   color: rgba(255, 255, 255, 0.6);
 `;
 
-export const Thead = styled.thead`
-  display: contents;
-`;
-
-export const Tr = styled.tr`
-  display: contents;
-`;
 export const Tbody = styled.tbody`
   display: contents;
+`;
+export const TrRow = styled.tr`
+  display: grid;
+  grid-template-columns: 220px 220px repeat(3, 80px) 160px repeat(3, 80px) 72px;
+  column-gap: 60px;
+  padding: 14px 30px 16px;
+  justify-content: ${(props) => props.$justify};
+  font-size: 11px;
+  font-weight: 500px;
+  line-height: 12px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    background:rgba(255, 255, 255, 0.06);
+  }
 `;
 export const TableImg = styled.img`
   width: 28px;
   height: 40px;
 `;
-export const TableImgContainer = styled.div`
-  display: flex;
-`;
 
-export const ModelContainer = styled.td`
-  padding: 16px 0px;
+export const ModelContainer = styled.div`
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -96,12 +104,12 @@ export const ModelContent = styled.span`
   display: flex;
 `;
 export const NameContainer = styled.td`
-  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.3px;
   display: flex;
   flex-flow: column;
+  
 `;
 export const NameContent = styled.span`
   width: 160px;
@@ -111,28 +119,25 @@ export const CardNumber = styled.span`
   color: rgba(255, 255, 255, 0.6);
 `;
 export const TdContentStart = styled.td`
-  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
-  font-weight:400;
+  font-weight: 400;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   letter-spacing: 0.1px;
   align-items: center;
   cursor: ${(props) => props.cursor};
 `;
 export const TdContentStartData = styled.td`
-  padding: 16px 0px;
   font-size: 12px;
   line-height: 20px;
-  font-weight:400;
+  font-weight: 400;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   letter-spacing: -0.3px;
   align-items: center;
 `;
 export const TdContentCenter = styled.td`
-  padding: 16px 0px;
   font-size: 13px;
   line-height: 20px;
   display: flex;
@@ -141,23 +146,20 @@ export const TdContentCenter = styled.td`
   cursor: ${(props) => props.cursor};
 `;
 export const TdContentStartPrice = styled.td`
-  padding: 16px 0px;
   font-size: 15px;
-  font-weight:500;
-  line-height: 20px;
+  font-weight: 500;
+  line-height: 22px;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   cursor: ${(props) => props.cursor};
 `;
 export const TdContentEnd = styled.td`
-  padding: 16px 0px;
   letter-spacing: 0.3px;
   font-size: 13px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
 `;
 
 export const DropDownContainer = styled.ul`
@@ -201,7 +203,7 @@ export const DropDownList = styled.li`
 export const DropDownContent = styled.span`
   font-size: 14px;
   line-height: 20px;
-  letter-spacing:0.6px;
+  letter-spacing: 0.6px;
   width: 194px;
 `;
 export const Switcher = styled.span`
@@ -248,7 +250,6 @@ export const Input = styled.input`
   }
 `;
 
-export const HoverRow =styled(TableRow)`
-
-background-color:rgba(255, 255, 255, 0.06);
-`
+export const HoverRow = styled(TableRow)`
+ 
+`;

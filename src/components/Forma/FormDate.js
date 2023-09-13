@@ -6,17 +6,17 @@ export const SignUpForm = [
       placeholder: "Name",
     },
     {
+      id: "email",
+      name: "email",
+      type: "text",
+      placeholder: "Email",
+    },
+    {
       id: "password",
       name: "password",
       type: "password",
       placeholder: "Password",
-    },
-    {
-        id: "email",
-        name: "email",
-        type: "text",
-        placeholder: "Email",
-      }
+    }
   ]
 
   export const LogInForm = [
