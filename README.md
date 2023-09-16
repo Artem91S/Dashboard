@@ -1,4 +1,4 @@
-Description in English:
+Description in English:<br/>
 <b>Project Dashboard.</b><br/>
 This project was written with <b>React </b> using <b>Pixel Perfect</b>.I used next technologies:<br/>
 <b>React Roter</b>-for page navigation;<br/>
