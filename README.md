@@ -1,9 +1,24 @@
-<b>Проєкт Dashboard.</b>
-Робота написана з урахуванням <b>Pixel Perfect</b> на <b>React </b>з використанням:
+Description in English:
+<b>Project Dashboard.</b><br/>
+This project was written with <b>React </b> using <b>Pixel Perfect</b>.I used next technologies:<br/>
+<b>React Roter</b>-for page navigation;<br/>
+<b>TanStack Query,Axios</b>-fetching data;<br/>
+<b>Styled-components</b> -styling of project;<br/>
+<b>Recharts</b>-build line chart and pia chart;<br/>
+ <b>Formik</b>-making form.<br/>
+
+The project has two pages: form and dashboard.
+I use Formik for building form and Yup for form validation. All form fields are required.
+All icons are made as react components.<br/>
+
+Опис Українською:<br/>
+
+<b>Проєкт Dashboard.</b><br/>
+Робота написана з урахуванням <b>Pixel Perfect</b> на <b>React </b>з використанням:<br/>
 <b>React Roter</b>-для навігації між сторінками; <br/>
-<b>TanStack Query,Axios</b>-запит на сервер для отримання даних; <br/>
-<b>Styled-components</b> - для написання стилів<br/>
-;<b>Recharts</b>  -для побудови графіків і діаграм;<br/>
+<b>TanStack Query,Axios</b>-запит на сервер для отримання даних;<br/>
+<b>Styled-components</b> - для написання стилів;<br/>
+<b>Recharts</b>  -для побудови графіків і діаграм;<br/>
  <b>Formik</b>- для побудови форми. <br/>
 
 Робота поділена на дві сторінки: форма і дашборд.
