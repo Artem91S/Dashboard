@@ -25,7 +25,7 @@ export function InfoBlock({ fetchData }) {
         </FlexBlock>
       </Container>
       <FlexBlock>
-        {fetchData?.users?.map((user) => (
+        {fetchData.map((user) => (
           <UserList 
           key={Math.random()}
           title={user.name} date={user.date} />

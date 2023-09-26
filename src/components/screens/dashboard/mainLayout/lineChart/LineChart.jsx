@@ -8,12 +8,12 @@ import {
 
 export function Chart({fetchData}) {
   function dataChange(){
-    return fetchData?.chartData.map(({date})=>date.split('-').reverse().join('/').slice(-10,-5))
+    return fetchData.map(({date})=>date.split('-').reverse().join('/').slice(-10,-5))
       }
     return (
     <AreaChart
       width={930} height={268} 
-      data={fetchData?.chartData}
+      data={fetchData}
       margin={{
         top: 0,
         right: 24,

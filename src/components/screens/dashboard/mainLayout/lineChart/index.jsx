@@ -7,16 +7,16 @@ import { Chart } from "./LineChart";
 import { HeaderChart } from "./HeaderLineChart";
 import { InfoBlock } from "./InfoBlock";
 import { useGetData } from "../../../../../hooks/useGetData.jsx";
-
+import { LineChartData,DataLineChart } from "./lineChartData.js";
 export function LineChart() {
    const { data } = useGetData();
   return (
-    <LineChartContainer>
+    <LineChartContainer> 
       <HeaderChart />
       <FlexChart>
         <Block>
-          <Chart fetchData={data} />
-          <InfoBlock fetchData={data} />
+          <Chart fetchData={DataLineChart} />
+          <InfoBlock fetchData={LineChartData} />
         </Block>
       </FlexChart>
     </LineChartContainer>
