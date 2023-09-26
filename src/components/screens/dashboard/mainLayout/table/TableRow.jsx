@@ -12,19 +12,20 @@ import {
   TdContentStartPrice,
   TdContentStartData,
 } from "./table.styled";
+import { TableDate } from './tableData.js'
 import { Options } from "../../../../icons/Options";
 import { ConvertDate } from "../../../../../utils/convertDate.js";
 import { useGetData } from "../../../../../hooks/useGetData";
 import Card from '../../../../../assets/card.png';
 export function TableRow({className}) {
-  const { data } = useGetData()
+  // const { data } = useGetData()
   return (
     <TrRow >
-      {data?.general_sales_time?.map((value, index) => (
+      {TableDate.map((value, index) => (
        <Fragment className={className} key={Math.random()} >
           <ModelContainer>
             <TableImg src={Card} alt="Card image" />
-            <ModelContent>{value.model.name}</ModelContent>
+            <ModelContent>{value.name}</ModelContent>
           </ModelContainer>
           <NameContainer>
             <NameContent>{value.card_name}</NameContent>
