@@ -18,16 +18,7 @@ const {data} =useGetData()
             {user.icon}
           </IconContainerUser>
           <Wrapper>
-            {data &&
-              Object.values(data?.statistic)
-                .reverse()
-                .map((elem, index) => (
-                  <StatisticStyle
-                  key={Math.random()}
-                  >
-                    {user.id === index + 1 && elem}
-                  </StatisticStyle>
-                ))}
+            <StatisticStyle>{user.info}</StatisticStyle>
             <UserDescription>{user.text}</UserDescription>
           </Wrapper>
         </UserContainer>
